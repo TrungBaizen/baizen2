@@ -1,0 +1,6 @@
+Hello C0224G1
+git init: khởi tạo local repository
+git add <tên file>: đẩy file demo vào vùng nhớ
+git commit -m "Baizen":đưa thay đổi vào local repo,tao 1 snapshot lưu trữ lại lịch sử thay đổi
+git remote:kết nối local repo với remote repo
+git push origin master: đẩy code từ local repo lên remote repo

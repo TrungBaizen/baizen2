@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Nhập điểm</h1>
+<input  id ="diem">
+<button onclick="tongdiem()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function tongdiem() {
+        var diem = document.getElementById("diem").value
+        console.log(diem)
+        if (diem > 75) {
+           alert("Gioi")
+        }else if (diem <75 && diem > 60){
+            alert("Khá")
+        }else {
+            alert("Kém")
+        }
+    }
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h1>Nhập điểm</h1>
+<input placeholder="nhap diem"  id ="diem">
+<button onclick="tongdiem()">Kiểm tra</button>
+<select id="select">
+    <option value="78">TienAnhNgu</option>
+    <option value="60">TienAnhAnCut</option>
+    <option value="59">TienAnhNguHoc</option>
+</select>
+<table>
+    <tr><td><h1>Học sinh</h1></td><td><h1>Điểm</h1></td></tr>
+    <tr><td>Trung</td><td id="diemHs1"></td></tr>
+    <tr><td>Hoàng</td><td id="diemHs2"></td></tr>
+</table>
+
+
+</body>
+</html>
+
+<script>
+    function tongdiem() {
+        var diem = document.getElementById("diem").value
+        var select = document.getElementById("select").value
+
+        if (diem > 75) {
+            alert("Gioi")
+            document.getElementById("diemHs1").value = "giỏi"
+        }else if (diem <75 && diem > 60){
+            alert("Khá")
+            document.getElementById("diemHs1").value = "Khá"
+
+        }else {
+            alert("Kém")
+            document.getElementById("diemHs1").value = "Kém"
+
+        }
+    }
+</script>
