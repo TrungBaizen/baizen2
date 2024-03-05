@@ -14,7 +14,7 @@ body {
 .boards {
     width: 50px;
     aspect-ratio: 1;
-    background: greenyellow;
+    background: whitesmoke;
 }
 
 .chessboard div:nth-child(-2n + 8),
